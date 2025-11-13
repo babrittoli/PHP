@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de e-mail com PHP</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    
+    <!-- Formulário com método POST-->
+    <form action="enviar_email.php" method="post">
+        
+        <!-- Email destinatário-->
+        <label for="">Para:</label><br>
+        <input type="email" name="email_destino" required><br><br>
+
+        <!-- Assunto do email -->
+        <label for="">Assunto: </label><br>
+        <input type="text" name="assunto" required><br><br>
+
+        <!-- Mensagem do email -->
+        <label for="">Mensagem: </label><br>
+        <textarea name="mensagem" rows="5" cols="30" required></textarea><br><br>
+
+        <!-- Botão para enviar -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
